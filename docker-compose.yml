@@ -2,7 +2,7 @@ version: '2'
 
 services:
   rstudio:
-    image: machine-data/docker-r-studio:latest
+    image: machinedata/r-studio:latest
     volumes:
       - ./rstudio:/home/rstudio/projects
     ports:
