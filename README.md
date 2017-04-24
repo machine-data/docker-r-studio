@@ -25,7 +25,7 @@ Start R-Studio and name the container `r-studio_test`:
 $ docker run -d \
     --name r-studio_test \
     --publish 8787:8787 \
-    --volume $(pwd)/rstudio:/home/rstudio \
+    --volume $(pwd)/rstudio:/home/rstudio/projects \
     machine-data/r-studio
 ```
 
@@ -33,7 +33,7 @@ Connect to the web interface with port 8787 and login with rstudio:rstudio
 
 ## Volumes
 
-- `/home/rstudio`: Path where R-Studio Projects and R persistent data are saved (.rstudio).
+- `/home/rstudio/projects`: Path where R-Studio Projects and R persistent data are saved (.rstudio).
 
 ## Ports
 
