@@ -38,7 +38,7 @@ RUN apt-get update \
   && rm -rf /tmp/downloaded_packages/ /tmp/*.rds
 ## tidyverse, devtools and related R packages already inherited from rocker/verse
 
-VOLUME /home/rstudio/projects
+VOLUME /home/rstudio
 
 ## httr authentication uses this port
 EXPOSE 1410
