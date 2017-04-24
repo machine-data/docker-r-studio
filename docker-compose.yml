@@ -1,0 +1,10 @@
+version: '2'
+
+services:
+  rstudio:
+    image: machine-data/docker-r-studio:latest
+    volumes:
+      - ./rstudio:/home/rstudio/projects
+    ports:
+      - '8787:8787'
+    restart: always
