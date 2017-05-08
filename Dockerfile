@@ -45,4 +45,4 @@ ENV HTTR_LOCALHOST 0.0.0.0
 #Export projects Volume
 VOLUME /home/rstudio/projects
 
-RUN echo "r-libs-user=~/R/packages" >> /etc/rstudio/rserver.conf && chown -R rstudio:rstudio /home/rstudio && service rstudio-server restart
+RUN echo "r-libs-user=~/R/packages" >> /etc/rstudio/rsession.conf && chown -R rstudio:rstudio /home/rstudio && service rstudio-server restart
